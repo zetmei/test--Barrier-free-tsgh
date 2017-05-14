@@ -1,0 +1,12 @@
+.logo {
+    background: url(../images/layout/logo.png) 0 0 no-repeat;
+}
+.logo a {
+    color: #fff;
+}
+.container{
+    width: 1140px;
+}
+.opinioncardwrap .column-block {
+    width: 20%;
+}

@@ -1156,6 +1156,7 @@ footer .footericon .footicon03 {
     margin-bottom: 0;
     padding-left: 0;
     background-color: #ffffff;
+    border-bottom: 5px solid #2ea7e0;
   }
   .pages_all .sidenav_ul ul{
     padding-left: 0px;
@@ -1246,7 +1247,6 @@ footer .footericon .footicon03 {
     transform: rotate(135deg);
 }
  
-
 
 
 

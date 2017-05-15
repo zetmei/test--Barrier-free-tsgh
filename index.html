@@ -741,6 +741,8 @@
                     </div>
                     <div class="row">
                         <div class="artmidSubNav">
+                            <div class="artmidSubNavX artmidSubNavclose"><i class="fa fa-times" aria-hidden="true"></i></div>
+                            <div class="artmidSubNavFox artmidSubNavclose"></div>
                             <ul id='artmidSubNav01'>
                             </ul>
                             <ul id='artmidSubNav02'>
@@ -1162,71 +1164,4 @@
         </div>
         <!--/.sidebar-offcanvas-->
     </div>
-    <script type="text/javascript">
-
-
-    $(function() {
-
-        ////index  ////multipul silder 
-        $(".regular").slick({
-            dots: true,
-            infinite: true,
-            autoplay:true,
-            slidesToShow: 6,
-            slidesToScroll: 6,
-              responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false
-                  }
-                }
-              ]
-        });
-    });
-
-    ////index  //// content3_C click JQ
-    $(function() {
-        $(".secimgA").click(function() {
-            artmidhide();
-            $("#artmidSubNav01").toggle(500);
-        })
-        $(".secimgB").click(function() {
-            artmidhide();
-            $("#artmidSubNav02").toggle(500);
-        })
-        $(".secimgC").click(function() {
-            artmidhide();
-            $("#artmidSubNav03").toggle(500);
-        })
-        $(".secimgD").click(function() {
-            artmidhide();
-            $("#artmidSubNav04").toggle(500);
-        })
-
-        function artmidhide() {
-            $(".artmidSubNav").show();
-            $("#artmidSubNav01").hide(0);
-            $("#artmidSubNav02").hide(0);
-            $("#artmidSubNav03").hide(0);
-            $("#artmidSubNav04").hide(0);
-        }
-    });
-    </script>
 </body>

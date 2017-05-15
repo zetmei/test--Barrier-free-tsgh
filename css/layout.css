@@ -2,6 +2,7 @@
 Author URI: https://zetmei.github.io/
 Author: zetmei
 ------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Ruluko');
 /* ////////////////////////////
 IMG FLOAT GRID SYSTEM 
 /////////////////////////////*/
@@ -272,7 +273,7 @@ html,
 body {
   font-family: 微軟正黑體, "Microsoft JhengHei";
   font-size: 16px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -371,6 +372,12 @@ span.remarks{
 .text-center{
   text-align: center;
 }
+.english{
+    font-family: 'Ruluko', sans-serif;
+}
+.division{
+  color: #a3a5a8;
+  }
 /* header */
 header{
     position: relative;
@@ -378,7 +385,6 @@ header{
     width: 100%;
     z-index: 10;
     border-bottom: 1px solid #eaeaea;
-    /* background-color: #fff; */
     padding-top: 5px;
 }
 header:after{
@@ -390,8 +396,6 @@ header:after{
     height: 8px;
     z-index: 1;    
     background-color: #2ea7e0;
-   /*  background: url(../images/layout/decoration01.png) 0 0 no-repeat;
-    background-size: 100% auto; */
 }
 /* header1 */
 .header1{
@@ -493,10 +497,7 @@ header:after{
 .head-setting .backgroundcolor li.cube a:hover {
   border: 3px solid #ccc;
    }   
-.head-setting .backgroundcolor .in a{
- /*  background-color: #fcc123;
-  color: #fff; */
-   }
+.head-setting .backgroundcolor .in a{}
 /* fontsize*/
 .head-setting .fontsize{
   height: 25px;
@@ -547,7 +548,6 @@ header:after{
   }
 .searchbar a{
     color:#555;
-  /* text-decoration: none; */
 }
 .searchbar button,.searchbar .button{
   background-color: #2ea7e0;
@@ -663,16 +663,6 @@ header:after{
 .navB .sub2 li:first-child a {
     border-top: none;
 }
-
-
-
-
-
-
-
-
-
-
 /* mobile-menu */
 .menu{
     position: absolute;
@@ -685,31 +675,6 @@ header:after{
     background-size: 34px;
     z-index: 1;
 }
-  .mobile_navM {
-    position: absolute;
-    z-index: 1000;
-    float: none;
-    margin-right: 0px;
-    margin: 0;
-    margin-top: 0px;
-    display: none;
-    width: 100%;
-    background-color: #fff;
-    padding: 0px 0;
-  }
-  .mobile_navM li {
-    display: block;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #e4e4e4;
-
-  }
-  .mobile_navM li a {
-      display: block;
-  }
-
 /* footer */
 footer .container{
     max-width: 1366px;
@@ -725,6 +690,7 @@ footer p,.footerNav p{
   margin-right: 20px;
   line-height: 25px;
   letter-spacing: 1px;
+  margin-bottom: 0px;
 }
 footer i,.footerNav i{
   color: #fff;
@@ -863,32 +829,27 @@ footer .footericon .footicon03 {
 
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -270px; /* 6 columns */
+    right: -270px; 
   }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -270px; /* 6 columns */
+    left: -270px; 
   }
 
   .row-offcanvas-right.active {
-    right: 270px; /* 6 columns */
+    right: 270px; 
   }
 
   .row-offcanvas-left.active {
-    left: 270px; /* 6 columns */
+    left: 270px; 
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 270px; /* 6 columns */
+    width: 270px; 
   }
-/* offcanvas menu */
-/* .row-offcanvas-right {
-    right: 270px;
-} */
-/* 測試用 */
   .offcanvaswrap {
     padding-left: 0;
     padding-right: 0;
@@ -966,7 +927,7 @@ footer .footericon .footicon03 {
   .otherToolWarp{
 
   }
-/* 其他小工具 */
+/* offcanvas mene:otherTool*/
 .otherToolWarp .navM {
     position: relative;
     right: 0;
@@ -1011,7 +972,7 @@ footer .footericon .footicon03 {
     width: 100%;
     height: 25px;
     display: block;
-    text-align: right;
+    text-align: left;
     margin-top: 10px;
 }
 /* backgroundcolor */
@@ -1019,6 +980,7 @@ footer .footericon .footicon03 {
     height: 25px;
     display: inline-block;
     text-align: center;
+    padding-left: 10px;
 }
 .otherToolWarp .head-setting .backgroundcolor li {
     height: 25px;
@@ -1059,10 +1021,7 @@ footer .footericon .footicon03 {
 .otherToolWarp .head-setting .backgroundcolor li.cube a:hover {
     border: 3px solid #ccc;
 }
-.otherToolWarp .head-setting .backgroundcolor .in a {
-    /*  background-color: #fcc123;
-  color: #fff; */
-}
+.otherToolWarp .head-setting .backgroundcolor .in a {}
 
 /* fontsize*/
 .otherToolWarp .head-setting .fontsize {
@@ -1165,18 +1124,85 @@ footer .footericon .footicon03 {
     background-color: #2ea7e0;
     transition: .5s;
 }
+/* 左邊選單 */
+.pages_all .sidenav_title {
+    width: 100%;
+    height: 43px;
+    background-color: #4b5052;
+  }
+.pages_all .sidenav_title h3 {
+      margin: 0;
+      color: #fff;
+      font-family: "微軟正黑體", "Microsoft JhengHei";
+      font-size: 16px;
+      line-height: 46px;
+      padding-left: 24px;
+  }
+  .pages_all .sidenav_ul {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #657379;
+  }
+  .pages_all .sidenav_ul {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #657379;
+  }
+  .pages_all .sidenav_ul img{
+      width: 25px;
+      margin-right: 7px;
+  }
+  .pages_all .sidenav_ul li, .pages_all .sidenav_ul li a {
+      width: 100%;
+      display: block;
+  }
+  .pages_all .sidenav_ul li.active{
+    /* background-color: #f00;  */
+  }
+  .pages_all .sidenav_ul li a {
+    line-height: 43px;
+    font-family: "微軟正黑體", "Microsoft JhengHei";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #696868;
+  }
+  .pages_all .sidenav_ul li:hover a {}
+  .sidenav_ul>li {      
+      border-bottom: #c9c9c9 1px solid;
+      border-left: #c9c9c9 1px solid;
+      border-right: #c9c9c9 1px solid;
+      text-indent: 30px;
+  } 
+  .pages_all .sidenav_ul ul.sidenav_ul_in {
+      width: 100%;
+      margin-left: 0;
+      text-indent: 33px;
+      display: none;
+      padding-left: 0;
+  }
+  .pages_all .sidenav_ul .active ul.sidenav_ul_in {
+      display: block;
+  }
+  .pages_all .sidenav_ul ul.sidenav_ul_in li {
+      border-top: #c9c9c9 1px solid;
+      background-color: #f4f4f4;
+  }
+  .pages_all .sidenav_ul ul.sidenav_ul_in li a {
+      color: #949494;
+      text-shadow: none;
+      text-indent: 62px;
+  }
+  .pages_all .sidenav_ul ul.sidenav_ul_in li:hover a {
+      text-decoration: underline;
+  }
 
-/* ////////////////////////////
-pages style
-/////////////////////////////*/
-/* pages content */
-.page_page1,.page_page2,.page_page3,.page_page4,.page_page5{
 
-}
-.content{
-  position: relative;
-}
-
+ 
 
 
 

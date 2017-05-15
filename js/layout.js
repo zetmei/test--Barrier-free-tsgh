@@ -1,5 +1,6 @@
 var $win = $(window);
 
+//////////////////////////////all common
 $(function(){
 
 	//<a> dash blur
@@ -35,7 +36,7 @@ $(function(){
 
 
 });
-//////////////////////////////footer(手機)打開
+//////////////////////////////mobile's footer 
 $(function(){
   //footer(手機)打開
     var _width = $win.width();
@@ -122,6 +123,27 @@ $(function(){
                       $("#sidenav_ul01 li .sidenav_ul_in").eq(NOW1).parent().siblings().find('.sidenav_ul_in').slideUp(300);
                       // 其他人樣式拿掉
                       $("#sidenav_ul01>li").eq(NOW1).siblings().removeClass('active');
+                 }
+             );
+
+
+});
+
+////////////////////////////// pages left menu
+$(function(){ 
+  //offcanvas menu
+            $('#sidemenu li').click(
+                 function(){      
+                   //摸到的第幾個
+                     var NOW1=$(this).index();  
+                      //自己的打開
+                      $("#sidemenu li .sidenav_ul_in").eq(NOW1).slideToggle(300);
+                      //自己樣式toggle
+                      $("#sidemenu>li").eq(NOW1).toggleClass('active');
+                      //其他人收起來
+                      $("#sidemenu li .sidenav_ul_in").eq(NOW1).parent().siblings().find('.sidenav_ul_in').slideUp(300);
+                      // 其他人樣式拿掉
+                      $("#sidemenu>li").eq(NOW1).siblings().removeClass('active');
                  }
              );
 

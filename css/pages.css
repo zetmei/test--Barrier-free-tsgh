@@ -1,23 +1,16 @@
-/* pages content */
-
-.page_page1,
-.page_page2,
-.page_page3,
-.page_page4,
-.page_page5 {}
-
+/* 所有頁面內容 */
 .content {
     position: relative;
 }
-
+/* 首頁內容 */
+.page_index{}
+/* 所有內頁內容 */
+.pages_all{}
 
 /* ////////////////////////////
 pages style:index
 /////////////////////////////*/
-
-
 /* .section_glory */
-
 .section_glory {
     position: relative;
     width: 100%;
@@ -622,7 +615,7 @@ pages style:index
     padding: 30px 0;
     background-color: #F6F6F6;
 }
-.pages_all h1.breadcrum {
+.pages_all h2.breadcrum {
     width: 100%;
     display: block;
     font-size: 24px;
@@ -632,13 +625,13 @@ pages style:index
     margin-top: 0;
     margin-bottom: 35px;
 }
-.pages_all h1.breadcrum span a {
+.pages_all h2.breadcrum span a {
     color: #808080;
     font-size: 16px;
     padding: 0 0 0 10px;
     text-decoration: none;
 }
-.pages_all h1.breadcrum span a:hover {
+.pages_all h2.breadcrum span a:hover {
     color: #2EA7E0;
     text-decoration: none;
 }
@@ -650,24 +643,27 @@ pages style:index
 .pages_all .contenR.lower {
     margin-top: 30px;
 }
+.pages_all .contenR.lower h2.breadcrum{
+    margin-bottom: 5px;
+}
 .pages_all .contenR .dortorIntro img{
     box-shadow: 10px 10px 0px #F6F6F6;
     margin-bottom: 40px;
 }
-.dortorIntro h1{
+.dortorIntro h2{
     font-size: 24px;
     color: #fcc123;
     margin-top: 0;
     margin-bottom: 40px;
 }
-.dortorIntro h2{
+.dortorIntro h3{
     position: relative;
     font-size: 18px;
     color: #828282;
     font-weight: 800;
     z-index: 2;
 }
-.dortorIntro h2 span{
+.dortorIntro h3 span{
     position: absolute;
     content: '';
     width: 100%;
@@ -693,12 +689,94 @@ pages style:index
 .dortorMore .slick-prev,.dortorMore .slick-next {
     top: 45%;
 }
-/* listBlockWrap */
+/* list-text     listBlockWrap */
 .listBlockWrap{
 
 }
-.listBlockWrap>div{
-    
+.listBlockWrap>div.column-block{
+    padding: 0 15px 15px 0;
+    margin: 0;
+}
+.listBlockWrap>div.column-block a{
+    display: block;
+    background: url(../images/layout/icon06.png) right 32px no-repeat;
+    text-align: center;
+    border: 1px solid #bcbcbc;
+    font-weight: 800;
+    padding: 20px 0;
+    box-shadow: 2px 2px 0px #b5b5b5;
+}
+.listBlockWrap>div.column-block a:hover{
+    box-shadow: 2px 2px 0px #6b6b6b;
+    color: #f3b91e;
+    text-decoration: none;
+    transition: .1s;
+}
+/* list-img      doctor-block */
+.listBlockWrap>div.column-block.doctor-block a{
+    padding: 0px;
+}
+.listBlockWrap>div.column-block.doctor-block p{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* pagerlist */
+.pagerlist{
+    text-align: center;
+}
+.pagerlist li{
+    padding: 0px 4px;
+    display: inline-block;
+}
+.pagerlist li a{
+    border: none;
+}
+
+.pagerlist li a:hover{
+     background-color: transparent;
+}
+.pagerlist a.arrow{
+    padding: 0;
+}
+.pagerlist a.arrow i{
+    font-size: 34px;
+    padding: 0;
+    color: #cbcbcb;
+}
+.pagerlist a.arrow:hover i{
+    color: #a5a5a5;
+}
+.pagerlist a.number{
+    border-radius: 50%;
+    border: 1px solid #756c6c;
+    color: #756c6c;
+}
+.pagerlist a.number:hover{
+    background-color: #a5a5a5;
+    color: #fff;
+}
+.pagerlist a.number.active{
+    position: relative;
+    background-color: #2ea7e0;
+    color: #fff;
+    border: none;
+    overflow: hidden;
+}
+.pagerlist a.number.active:before{
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 100%;
+    top: -16px;
+    left: -25px;
+    background-color: rgba(255, 255, 255, 0.26);
+    transform: rotate(159deg);
 }
 
 

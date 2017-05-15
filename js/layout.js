@@ -131,19 +131,20 @@ $(function(){
 
 ////////////////////////////// pages left menu
 $(function(){ 
-  //offcanvas menu
-            $('#sidemenu li').click(
+  // pages left menu
+            // 第1層打開
+            $('#sidemenu>li>a').click(
                  function(){      
                    //摸到的第幾個
-                     var NOW1=$(this).index();  
+                     var NOW1=$(this).parent().index();  
                       //自己的打開
-                      $("#sidemenu li .sidenav_ul_in").eq(NOW1).slideToggle(300);
+                      $("#sidemenu>li .sidenav_ul_in").eq(NOW1).slideToggle(300);
                       //自己樣式toggle
-                      $("#sidemenu>li").eq(NOW1).toggleClass('active');
+                      $("#sidemenu>li").eq(NOW1).toggleClass('openbox');
                       //其他人收起來
-                      $("#sidemenu li .sidenav_ul_in").eq(NOW1).parent().siblings().find('.sidenav_ul_in').slideUp(300);
+                      $("#sidemenu>li .sidenav_ul_in").eq(NOW1).parent().siblings().find('.sidenav_ul_in').slideUp(300);
                       // 其他人樣式拿掉
-                      $("#sidemenu>li").eq(NOW1).siblings().removeClass('active');
+                      $("#sidemenu>li").eq(NOW1).siblings().removeClass('openbox');
                  }
              );
 

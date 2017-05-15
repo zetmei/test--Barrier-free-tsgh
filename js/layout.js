@@ -150,3 +150,11 @@ $(function(){
 
 
 });
+
+////////////////////////////// pages left menu in rwd
+$(function(){ 
+    $('.sidenavMenu').click(function () {
+      $('.sidenavMenu').toggleClass('active');
+      $(".sidenav_ul").slideToggle(300);
+    });
+});

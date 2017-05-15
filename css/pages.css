@@ -693,8 +693,7 @@ pages style:index
 .listBlockWrap{
 
 }
-.listBlockWrap>div.column-block{
-    padding: 0 15px 15px 0;
+.listBlockWrap>div.column-block{    padding: 0 8px 15px 8px;
     margin: 0;
 }
 .listBlockWrap>div.column-block a{
@@ -719,12 +718,6 @@ pages style:index
 .listBlockWrap>div.column-block.doctor-block p{
     margin-top: 20px;
 }
-
-
-
-
-
-
 
 /* pagerlist */
 .pagerlist{

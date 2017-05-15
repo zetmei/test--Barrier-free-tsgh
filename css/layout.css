@@ -1127,6 +1127,7 @@ footer .footericon .footicon03 {
 }
 /* 左邊選單 */
 .pages_all .sidenav_title {
+    position: relative;
     width: 100%;
     height: 60px;
     background-color: #4b5052;
@@ -1226,8 +1227,30 @@ footer .footericon .footicon03 {
   .pages_all .sidenav_ul li.openbox-small{
     background: url(../images/layout/icon11.png) 6px 13px no-repeat;
   }
-
+/* 手機板開合按鈕 */
+.sidenavMenu{
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url(../images/layout/icon13.png) 0px 0px no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    background-size: 100% auto;
+    transform: rotate(0deg);
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+}
+.sidenavMenu.active{
+    transform: rotate(135deg);
+}
  
+
+
+
+
+
 
 
 

@@ -8,7 +8,6 @@
     <link rel="shortcut icon" sizes="16x16" href="images/layout/favicon.ico">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -18,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <!--[if lte IE 8]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
     <!-- js -->
@@ -1173,4 +1173,82 @@
         </div>
         <!--/.sidebar-offcanvas-->
     </div>
+<script>
+    
+    $(function() {
+
+        ////index  ////multipul silder 
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            autoplay:true,
+            slidesToShow: 6,
+            slidesToScroll: 6,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false
+                  }
+                }
+              ]
+        });
+    });
+
+    
+////////////index 服務項目
+$(document).ready(function() {
+    
+     $(".artmidSubNavclose").click(function() {
+          artmidhide();
+          $(".artmidSubNav").hide();
+        })
+     
+     
+     $(".secimgA").click(function() {
+            artmidhide();
+            $("#artmidSubNav01").toggle(500);
+        })
+     $(".secimgB").click(function() {
+            artmidhide();
+            $("#artmidSubNav02").toggle(500);
+        })
+      $(".secimgC").click(function() {
+            artmidhide();
+            $("#artmidSubNav03").toggle(500);
+        })
+       $(".secimgD").click(function() {
+            artmidhide();
+            $("#artmidSubNav04").toggle(500);
+        })
+
+
+
+   function artmidhide()
+   {
+     $(".artmidSubNav").show();
+     $("#artmidSubNav01").hide(0);
+     $("#artmidSubNav02").hide(0);
+     $("#artmidSubNav03").hide(0);
+     $("#artmidSubNav04").hide(0);
+   }
+
+});
+</script>
 </body>

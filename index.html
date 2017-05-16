@@ -7,13 +7,12 @@
     <title>三軍總醫院</title>
     <link rel="shortcut icon" sizes="16x16" href="images/layout/favicon.ico">
     <!-- css -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/rwdgrid.css" > -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
-    <link href="css/pages.css" rel="stylesheet">  
+    <link href="css/pages.css" rel="stylesheet">
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
     <!--[if lte IE 8]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
@@ -392,20 +391,19 @@
                             </div>
                         </div>
                         <div class="content3_C news col-xs-12 col-sm-12 col-md-4">
-                            <input type="radio" id="text01" name="textnews" checked class="asideinpt">
-                            <input type="radio" id="text02" name="textnews" class="asideinpt">
-                            <input type="radio" id="text03" name="textnews" class="asideinpt">
-                            <input type="radio" id="text04" name="textnews" class="asideinpt">
-                            <input type="radio" id="text05" name="textnews" class="asideinpt">
-                            <div class="labnews">
-                                <label for="text01" id="textlb01">最新消息</label>
-                                <label for="text02" id="textlb02">研討會</label>
-                                <label for="text03" id="textlb03">活動</label>
-                                <label for="text04" id="textlb04">疫情防治</label>
-                                <label for="text05" id="textlb05">健保訊息</label>
-                            </div>
-                            <div class="textbg">
-                                <div class="text" id="text01">
+                            
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs labnews" role="tablist">
+                            <li role="presentation" class="active"><a href="#textlb01" aria-controls="textlb01" role="tab" data-toggle="tab">最新消息</a></li>
+                            <li role="presentation"><a href="#textlb02" aria-controls="textlb02" role="tab" data-toggle="tab">研討會</a></li>
+                            <li role="presentation"><a href="#textlb03" aria-controls="textlb03" role="tab" data-toggle="tab">活動</a></li>
+                            <li role="presentation"><a href="#textlb04" aria-controls="textlb04" role="tab" data-toggle="tab">疫情防治</a></li>
+                            <li role="presentation"><a href="#textlb05" aria-controls="textlb05" role="tab" data-toggle="tab">健保訊息</a></li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content textbg">
+                            <div role="tabpanel" class="text tab-pane active" id="textlb01">
                                     <ul>
                                         <li>
                                             <a href="/news/191/10000/1009" target="_blank" title="[徵才] 106年度醫院癌症診療品質精進計畫助理招聘(另開新視窗)">
@@ -444,9 +442,10 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="text" id="text02">
-                                    <ul>
+                                    <a id="more" href="#">更多</a>
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb02">
+                                 <ul>
                                         <li>
                                             <a href="">
                                                 <span class="text01">新訊息2</span>
@@ -514,8 +513,8 @@
                                         </li>
                                         </a>
                                     </ul>
-                                </div>
-                                <div class="text" id="text03">
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb03">
                                     <ul>
                                         <li>
                                             <a href="">
@@ -584,8 +583,9 @@
                                         </li>
                                         </a>
                                     </ul>
-                                </div>
-                                <div class="text" id="text04">
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb04">
+                                    
                                     <ul>
                                         <li>
                                             <a href="">
@@ -654,8 +654,9 @@
                                         </li>
                                         </a>
                                     </ul>
-                                </div>
-                                <div class="text" id="text05">
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb05">
+                                
                                     <ul>
                                         <li>
                                             <a href="">
@@ -724,9 +725,11 @@
                                         </li>
                                         </a>
                                     </ul>
-                                </div>
                             </div>
-                            <a id="more" href="#">更多</a>
+                          </div>
+
+
+
                         </div>
                         <div class="content3_R facebook col-xs-12 col-sm-12 col-md-4">
                             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftsghpmd%2F%3Fref%3Daymt_homepage_panel&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" id="iface" width="340" height="500" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowtransparency="true" title="三軍總醫院粉絲團"></iframe>

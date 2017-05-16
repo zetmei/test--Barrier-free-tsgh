@@ -243,6 +243,51 @@ pages style:index
 
 
 /* news */
+/* news 換ie8符合*/
+.content3_C .labnews li {
+    width: 20%;
+    height: 40px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid rgba(189, 189, 189, 0.5);
+    float: left;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #999;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+    background: linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+
+    overflow: hidden;
+    background: white;
+    font-size: 16px;
+    line-height: 42px;
+}
+.content3_C .labnews li a{
+    margin-right: 0;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 0px;
+}
+.content3_C .labnews li.active{
+    border-bottom: 0;
+}
+.content3_C .labnews li.active a{
+    color: #5fa3d8;
+    font-weight: 800;
+    background-color: #e9f5ff;
+}
+.content3_C .text {
+    width: 90%;
+    height: 270px;
+    margin: auto;
+    background: #E9F5FF;
+    padding: 0;
+}
 
 .content3_C.news {
     height: 300px;
@@ -252,7 +297,6 @@ pages style:index
 }
 
 .content3_C .text {
-    display: none;
     width: 90%;
     height: 270px;
     margin: auto;
@@ -319,77 +363,6 @@ pages style:index
     color: white;
     line-height: 20px;
     text-align: center;
-}
-
-.content3_C label {
-    margin-bottom: 0;
-}
-
-
-/* content3_C  news's tab*/
-
-.asideinpt {
-    display: none;
-}
-
-.labs {
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.labs,
-.labnews {
-    width: 100%;
-    height: 40px;
-}
-
-.labs label,
-.labnews label {
-    width: 20%;
-    height: 40px;
-    display: block;
-    box-sizing: border-box;
-    border: 1px solid rgba(189, 189, 189, 0.5);
-    float: left;
-    border-radius: 5px 5px 0 0;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.8;
-    font-weight: 500;
-    color: #999;
-    letter-spacing: 2px;
-    background: -webkit-linear-gradient(hsla(0, 0%, 100%, .2), transparent);
-    background: linear-gradient(hsla(0, 0%, 100%, .2), transparent);
-}
-
-.labnews label {
-    font-size: 12px;
-    line-height: 3;
-    overflow: hidden;
-    background: white;
-    font-size: 16px;
-    line-height: 42px;
-}
-
-#text05:checked ~ .labnews #textlb05,
-#text04:checked ~ .labnews #textlb04,
-#text03:checked ~ .labnews #textlb03,
-#text02:checked ~ .labnews #textlb02,
-#text01:checked ~ .labnews #textlb01 {
-    color: #2EA7E0;
-    background: white;
-    border-bottom: 0;
-    color: #3787c5;
-    background-color: #e9f5ff;
-    font-weight: bolder;
-}
-
-#text05:checked ~ .textbg #text05,
-#text04:checked ~ .textbg #text04,
-#text03:checked ~ .textbg #text03,
-#text02:checked ~ .textbg #text02,
-#text01:checked ~ .textbg #text01 {
-    display: block;
 }
 
 
@@ -644,6 +617,11 @@ pages style:index
     background-color: #fff;
     padding: 30px 50px;
 }
+.pages_all .contenR .container {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
 .pages_all .contenR.lower {
     margin-top: 30px;
 }
@@ -722,7 +700,9 @@ pages style:index
 .listBlockWrap>div.column-block.doctor-block p{
     margin-top: 20px;
 }
-
+.listBlockWrap>div.column-block.doctor-block img{
+    width: 100%;
+}
 /* pagerlist */
 .pagerlist{
     text-align: center;

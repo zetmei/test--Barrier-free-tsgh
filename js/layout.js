@@ -3,13 +3,13 @@ var $win = $(window);
 //////////////////////////////all common
 $(function(){
 
-	//<a> dash blur
-    $("a").focus(function(){
-         $(this).blur();
-     }); 
-    $("button").focus(function(){
-         $(this).blur();
-     }); 
+	//<a> dash blur，無障礙網頁不能寫這個
+    // $("a").focus(function(){
+    //      $(this).blur();
+    //  }); 
+    // $("button").focus(function(){
+    //      $(this).blur();
+    //  }); 
 
     //backgroundcolor change
     $(".cube.a").click(function(){

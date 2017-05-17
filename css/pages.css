@@ -796,7 +796,7 @@ pages style:index
     .section_contentTab1 .nav-tabs>li {
         text-align: center;
         display: inline-block;
-        width: 49.5%;
+        width: 48.5%;
         float: none;
         margin-bottom: 6px;
     }
@@ -905,4 +905,11 @@ pages style:index
         padding-right: 0px;
         font-size: 12px;
     }
+}
+@media screen and (max-width: 440px) {
+    .content3_C .labnews li a {
+    font-size: 10px;
+    line-height: 22px;
+
+}
 }

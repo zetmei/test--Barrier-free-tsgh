@@ -786,12 +786,15 @@ footer .nosmoke span{
 footer .footericon a {
     display: block;
     padding: 2px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 5px auto;
 }
 footer .footericon a img{
   width: 100%;
 }
-.square{width: 50%;}
+.square {
+    width: 50%;
+    float: left;
+}
 .rectangle{width: 100%;}
 
 /*************foote nav*/

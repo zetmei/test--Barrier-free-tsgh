@@ -906,6 +906,17 @@ pages style:index
         font-size: 12px;
     }
 }
+@media screen and (max-width: 480px) {
+  .dortorMore .breadcrum a{
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 5px 0;
+    margin: 20px 0 5px 0;
+    border: 1px solid #adadad;
+    display: none;
+  }
+}
 @media screen and (max-width: 440px) {
     .content3_C .labnews li a {
     font-size: 10px;

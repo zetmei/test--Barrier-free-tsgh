@@ -363,6 +363,13 @@ span.remarks{
     text-align: right;
     padding: 5px 0;
 }
+
+.barrier-free-h2{
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* common */
 .float-center {
     display: block;
@@ -424,26 +431,28 @@ header{
 }
 .navM {
     position: absolute;
-    display: inline-block;
     z-index: 1;
     right: 0;
     top: 20px;
+}
+.navM ul{
     width: auto;
     height: auto;
     letter-spacing: 0px;
     list-style-type: none;
+    padding-left: 0;
 }
-.navM>li {
+.navM ul>li {
     position: relative;
     float: left;
     font-size: 18px;
     height: 22px;
 }
-.navM>li:hover a{
+.navM ul>li:hover a{
     color: #22a9e6;
     transition: .1s;
 }
-.navM > li > a {
+.navM ul > li > a {
     display: block;
     font-size: 16px;
     color: #555;
@@ -466,6 +475,7 @@ header{
     
     text-align: right;
     margin-top: 10px;
+    display: inline;
 }
    /* backgroundcolor */  
 .head-setting .backgroundcolor{
@@ -974,7 +984,7 @@ footer .footericon a img{
     list-style-type: none;
     padding: 6px 5px;
 }
-.otherToolWarp .navM>li {
+.otherToolWarp .navM ul>li {
     position: relative;
     float: none;
     font-size: 18px;
@@ -982,11 +992,11 @@ footer .footericon a img{
     display: inline-block;
 }
 
-.otherToolWarp .navM>li:hover a {
+.otherToolWarp .navM ul>li:hover a {
     color: #22a9e6;
     transition: .1s;
 }
-.otherToolWarp .navM > li > a {
+.otherToolWarp .navM ul > li > a {
     display: inline-block;
     font-size: 16px;
     color: #fff;

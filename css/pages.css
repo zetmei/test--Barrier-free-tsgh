@@ -52,7 +52,7 @@ pages style:index
     z-index: 20;
 }
 
-.section_glory_L .carousel-control.left,
+.carousel-control.left,
 .carousel-control.right {
     background-image: none;
     background-image: none;
@@ -368,12 +368,20 @@ pages style:index
 
 /* fb */
 
-.content3_R.facebook {
-    height: 300px;
+.content3_R {
+    /* height: 300px; */
     overflow: hidden;
 }
-
-
+.content3_R .carousel-inner .item{
+    text-align: center;
+}
+.content3_R .facebook{
+    height: 300px;
+}
+.content3_R .carousel-inner .item img{
+    display: block;
+    margin: 0 auto;
+}
 /* content3_L click JQ */
 
 .artmidSubNav {
@@ -644,6 +652,7 @@ pages style:index
     color: #828282;
     font-weight: 800;
     z-index: 2;
+    clear: both;
 }
 .dortorIntro h3 span{
     position: absolute;

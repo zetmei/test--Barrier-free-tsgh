@@ -398,6 +398,20 @@ span.remarks{
 #accesskey-F{color: #046eb8;padding: 0; margin-left: -10px;}
 #accesskey-L{color: #edc456;text-shadow: none;margin-left: -18px;}
 #accesskey-R{color: #fff;margin-left: -20px;}
+.modalBtn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    display: block;
+    padding: 5px 16px;
+    background-color: #fff;
+    color: #555;
+    border: 2px solid #f6f6f6;
+    box-shadow: none;
+    border-radius: 0;
+    float: right;
+}
 /* header */
 header{
     position: relative;

@@ -712,6 +712,9 @@ pages style:index
 .listBlockWrap>div.column-block.doctor-block img{
     width: 100%;
 }
+.listBlockWrap .lg-txt a{
+    font-size: 20px;
+}
 /* pagerlist */
 .pagerlist{
     text-align: center;

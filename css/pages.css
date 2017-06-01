@@ -36,7 +36,12 @@ pages style:index
 
 
 /* slider */
-
+.section_glory_L .carousel {
+    position: relative;
+    height: 27vw;
+    overflow: hidden;
+    max-height: 430px;
+}
 .section_glory_L .carousel-inner {
     text-align: center;
 }
@@ -46,6 +51,9 @@ pages style:index
     float: none;
     margin: 0 auto;
     width: 100%;
+
+    /* width: auto;
+    max-height: 430px; */
 }
 
 .section_glory_L .carousel-control {
@@ -610,6 +618,9 @@ pages style:index
     margin-top: 0;
     margin-bottom: 35px;
 }
+.pages_all h2.breadcrum>a{
+    color: #2EA7E0;
+}
 .pages_all h2.breadcrum span a {
     color: #808080;
     font-size: 16px;
@@ -779,6 +790,9 @@ pages style:index
 
 @media screen and (max-width: 1200px) {
     /* md:993-1200 */
+    .section_glory_L .carousel {
+    height: 33vw;
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -833,7 +847,20 @@ pages style:index
     }
 }
 @media screen and (max-width: 991px) {
-
+.section_glory_L .carousel {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.section_glory_L .carousel img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    
+   /*  width: auto; */
+    max-height: inherit;
+}
 /*  首頁服務光箱 */
 .artmidSubNav {
     position: fixed;
@@ -907,15 +934,28 @@ pages style:index
 }
 
 }
+@media screen and (max-width: 850px) {
+    .section_otherTab .nav-tabs>li a {
+     padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+    overflow: hidden;
+    height: 38px;
+    line-height: 24px;
+    }
+}
 @media screen and (max-width: 768px) {
     /* xs:0-768 */
 }
 
 @media screen and (max-width: 600px) {
     .section_otherTab .nav-tabs>li a {
-        padding-left: 0px;
-        padding-right: 0px;
-        font-size: 12px;
+     padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+    overflow: hidden;
+    height: 38px;
+    line-height: 24px;
     }
 }
 @media screen and (max-width: 480px) {

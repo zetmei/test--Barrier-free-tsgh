@@ -38,9 +38,9 @@ pages style:index
 /* slider */
 .section_glory_L .carousel {
     position: relative;
-    height: 30vw;
     overflow: hidden;
-    max-height: 430px;
+    height: 35vw;
+    max-height: 548px;
 }
 .section_glory_L .carousel-inner {
     text-align: center;
@@ -796,7 +796,7 @@ pages style:index
 @media screen and (max-width: 1200px) {
     /* md:993-1200 */
     .section_glory_L .carousel {
-    height: 33vw;
+    height: 40vw;
 }
 }
 

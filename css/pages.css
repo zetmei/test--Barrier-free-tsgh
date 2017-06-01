@@ -38,7 +38,7 @@ pages style:index
 /* slider */
 .section_glory_L .carousel {
     position: relative;
-    height: 27vw;
+    height: 30vw;
     overflow: hidden;
     max-height: 430px;
 }
@@ -116,6 +116,11 @@ pages style:index
     border-bottom: 1px dashed #337ab7;
 }
 
+.section_glory_R ul.glory li.active a {
+    color: #fcc123;
+    border-bottom: 1px dashed #fcc123;
+
+}
 
 /* section_contentTab1 */
 
@@ -976,3 +981,10 @@ pages style:index
 
 }
 }
+
+
+
+
+/* ////////////////////////////
+季霖新增  以下
+/////////////////////////////*/

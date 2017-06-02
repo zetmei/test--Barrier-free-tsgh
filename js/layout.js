@@ -175,58 +175,14 @@ $(document).ready(function(){
 });
 
 
-
-
 ////////////////////////////// index slick tab bug
-// $(function () {
-//     var popupSlide = $('.slider').slick({
-//         autoplay: false,
-//       "arrows": false, 
-//        "fade": true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//     });
-// });
-
-// (function($) {
-//     $.fn.clickToggle = function(func1, func2) {
-//         var funcs = [func1, func2];
-//         this.data('toggleclicked', 0);
-//         this.click(function() {
-//             var data = $(this).data();
-//             var tc = data.toggleclicked;
-//             $.proxy(funcs[tc], this)();
-//             data.toggleclicked = (tc + 1) % 2;
-//         });
-//         return this;
-//     };
-// }(jQuery));
-
-
-// $(document).ready(function(){  
-// $('.btnPlay').clickToggle(function() {
-//     // $('.slider').slickPlay();
-//     $('#otherTab1 .slider').slickPause();
-// }, function() {
-//     $('#otherTab1 .slider').slickPause();
-// });
-
-// });
-
-
 $(document).ready(function(){  
 
-    // $('.btnPlay').click(function () {
-    //   $('#otherTab1 .slider').slickPause();
-    // });
   $('.btnPause').click(function() {
       $('.regular').slick('slickPause');
   });
   $('.btnPlay').click(function() {
       $('.regular').slick('slickPlay');
   });
-  // $('#otherTab1 .btnPlay').click(function() {
-  //   $('.regular').slick('slickPlay');
-  // });
 
 });

@@ -844,6 +844,7 @@ pages style:index
   .md-hidden{
     /* md:993-1200 */
 }
+}
 
 @media screen and (max-width: 1024px) {
     .section_contentTab1 .nav-tabs>li>a {

@@ -788,21 +788,61 @@ pages style:index
     background-color: rgba(255, 255, 255, 0.26);
     transform: rotate(159deg);
 }
+/* share */
+.shareIcon{
+    text-align: right;
+    padding-top: 10px;
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-    /* md:993-1200 */
-    .section_glory_L .carousel {
-    height: 40vw;
 }
+.shareIcon a{
+    
+}
+.shareIcon a:hover{
+    text-decoration: none;
+}
+.shareIcon a:hover img{
+    opacity: .5;
+}
+.shareIcon a img{
+    width: 27px;
+}
+.pages_all .contenR  .pageBottom{
+    border-top: 1px dashed #cbcbcb;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.pageBtn{
+}
+.pageBtn a{
+    margin-right: 20px;
+    color: #adadad;}
+.pageBtn a i{
+    color: #adadad;
+}
+.pageBtn a:hover{
+        color: #585858;
+}
+.pageBtn a:hover i{
+        color: #585858;
+}
+.pageDescription{
+
+}
+.pageDescription span{
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {/* md:993-1200 */
+  .md-hidden{
+    /* md:993-1200 */
 }
 
 @media screen and (max-width: 1024px) {
@@ -812,11 +852,17 @@ pages style:index
     }
 }
 
-@media screen and (max-width: 992px) {
-    /* sm:769-992 */
+@media screen and (max-width: 992px) {/* sm:769-992 */
     .content3_L,
     .content3_C {
         margin-bottom: 50px;
+    }
+    .pages_all h2.breadcrum {
+        margin-bottom: 0;
+    }
+    .shareIcon {
+        text-align: left;
+        padding: 10px 25px 20px 25px;
     }
 }
 
@@ -858,18 +904,10 @@ pages style:index
 }
 @media screen and (max-width: 991px) {
 .section_glory_L .carousel {
-    position: relative;
-    height: auto;
-    overflow: hidden;
+    min-height: 200px;
+    height: 52.63vw;
 }
 .section_glory_L .carousel img {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-    
-   /*  width: auto; */
-    max-height: inherit;
 }
 /*  首頁服務光箱 */
 .artmidSubNav {
@@ -954,10 +992,10 @@ pages style:index
     line-height: 24px;
     }
 }
-@media screen and (max-width: 768px) {
-    /* xs:0-768 */
+@media screen and (max-width: 768px) {/* xs:0-768 */
+    .xs-show{
+    }
 }
-
 @media screen and (max-width: 600px) {
     .section_otherTab .nav-tabs>li a {
      padding-left: 0px;
@@ -993,3 +1031,75 @@ pages style:index
 /* ////////////////////////////
 季霖新增  以下
 /////////////////////////////*/
+#CPTTreeView {
+    /*float: left;*/
+    /*width: 242px;
+    width: 244px;*/
+    overflow: hidden;
+    /*height: 600px;*/
+    /*margin-right: 10px;*/
+}
+/*.dxtvControl_Moderno {
+    width: 200px !important;
+}*/
+.node {
+    /*width: 100px;*/
+    white-space: normal !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.dxtvControl_Moderno .dxtv-subnd {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    word-break: break-all !important;
+    /*word-break: keep-all !important;*/
+}
+.dxtvControl_Moderno ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.tv_menu_child {
+    width: 200px;
+    white-space: normal !important;
+    overflow: hidden;
+}
+    .tv_menu_child span {
+        line-height: 30px;
+        font-family: "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei";
+        font-size: 16px !important;
+        color: #969696;
+        font-weight: 900;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+.dxtv-nd:hover {
+    background-color: #aaa;
+}
+
+    .dxtv-nd:hover .tv_menu_child span {
+        line-height: 30px;
+        font-family: "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei";
+        font-size: 16px !important;
+        color: #fff;
+        font-weight: 900;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+.pages_all .sidenav_ul > li {
+    border-bottom: #c9c9c9 1px solid;
+    border-left: #c9c9c9 1px solid;
+    border-right: #c9c9c9 1px solid;
+    text-indent: 0px;
+}
+
+.pages_all .sidenav_ul > li {
+    background: none;
+}
+
+
+
+

@@ -186,13 +186,3 @@ $(document).ready(function(){
   });
 
 });
-
-//////////////////////////////up to top
-$(document).ready(function(){  
-
-      //gotop
-    $('.top_btn').click(function() {
-      $('body,html').animate({scrollTop:0},800);
-    });
-
-});

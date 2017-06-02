@@ -1,19 +1,19 @@
 ==0523更新=============================================
->>首頁banner建議大小766*430px
->>首頁banner的控制點改成程式產生(首頁搜尋："0601更新"，找到區塊並拿掉)
-
->>內頁新增分享icon、返回按鈕，搜尋："0601更新"
->>內頁規則
-<div class="content pages_all">(後方如有class為該頁面命名：pages_all為除了index以外的其他頁面)
-	<div class="sidenav_title">左邊選單</div>
-	<div class="contenR">(後方如有class為該頁面命名區分：dortorIntro為醫師介紹、editor為上稿內容)
-		右邊區塊內容、標題、分享icon、內容、分頁按鈕、回首頁按鈕等等
-	</div>
-</div>
+>>首頁banner建議大小881*587px
+>>首頁banner建議大小1366*413px(滿版)---未處理
+>>首頁banner的控制點改成程式產生(首頁搜尋"0601更新"，找到區塊並拿掉)
 
 
->>希望季霖修改css的可以統一貼到pages.css後方(pages.css的權重比layout.css高)
-我有寫上標註，搜尋："季霖新增"(並且不要在html頁面上寫入style，不然會很難控制)
+
+
+
+>>希望季霖修改的可以統一貼到layout或pages後方
+我有寫上一塊，如：
+/* ////////////////////////////
+季霖新增  以下
+/////////////////////////////*/
+
+
 以便做檢查調整，像是有些會互相蓋到，如
 .sidenav_ul > li {
     border-bottom: #c9c9c9 1px solid;
@@ -21,7 +21,7 @@
     border-right: #c9c9c9 1px solid;
     text-indent: 0px;
 }
-會希望改成，前方加上.pages_all
+我會希望改成，前方加上.pages_all
 (不然手機頁面的選單也會也會被改到。pages_all是首頁以外所有內頁的標籤)
 .pages_all .sidenav_ul > li {
     border-bottom: #c9c9c9 1px solid;

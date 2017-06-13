@@ -158,21 +158,6 @@ $(function(){
       $(".sidenav_ul").slideToggle(300);
     });
 });
-////////////////////////////// index carasel list
-$(document).ready(function(){  
-    var myCarousels = $(".section_glory_L .carousel");
-    myCarousels.each(function( index, element  ) {
-        var myCarousel = $("#"+$(element).attr('id')); 
-        myCarousel.append("<ol class='carousel-indicators'></ol>");
-        var indicators = $("#"+$(element).attr('id') + " .carousel-indicators"); 
-        $("#"+$(element).attr('id') +" .carousel-inner").children(".item").each(function(index) {
-            console.log(index);
-            (index === 0) ? 
-            indicators.append("<li data-target='#"+$(element).attr('id')+"' data-slide-to='"+index+"' class='active'></li>") : 
-            indicators.append("<li data-target='#"+$(element).attr('id')+"' data-slide-to='"+index+"'></li>");
-        });
-    });
-});
 
 
 ////////////////////////////// index slick tab bug
@@ -196,3 +181,36 @@ $(document).ready(function(){
     });
 
 });
+//////////////////////////////fb-carasel hide control on first
+$('#carousel-example-generic3').on('slid', '', checkitem);
+
+$(document).ready(function () {
+
+
+
+    checkitem();
+});
+
+
+function checkitem() {
+    var checkBot;
+
+    if ($('#right_fb').css('display') != 'none') {
+        checkBot = $('#right_fb .item');
+    }
+
+    if ($('#right_img').css('display') != 'none') {
+        checkBot = $('#right_img .item');
+    }
+
+    var $this = $('#carousel-example-generic3');
+    if (checkBot.length == 1) {
+        $this.children('#carousel-example-generic3 .left.carousel-control').hide();
+        $this.children('#carousel-example-generic3 .right.carousel-control').hide();
+    }
+
+    if (checkBot.length > 1) {
+        $this.children('#carousel-example-generic3 .left.carousel-control').hide();
+    }
+
+}

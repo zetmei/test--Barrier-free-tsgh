@@ -703,6 +703,7 @@ header{
     opacity: 1;
     margin-top: 0;
     transition: opacity .5s .1s, margin-top .5s, left 0s 0s;
+    z-index: 1;
 }
 .navB .sub2 a {
     display: block;
@@ -884,6 +885,10 @@ footer .footericon a img{
     vertical-align: top;
     margin: 3px 0 3px 0;
     margin-left: 10px;
+}
+.footer_nav_ul li{
+  word-wrap: break-word;
+word-break: break-all;
 }
 .footer_nav_ul li a {
     color: #fff;

@@ -1,4 +1,47 @@
-==0523更新=============================================
+==0613更新02=============================================
+layout.css
+page.css
+
+==0613更新=============================================
+＊cdn拿掉導致ie8跑版問題
+參考首頁的前後連結
+全部改成內連(含ie8註解掉的那些，那些雖然被註解但是是給ie8讀的)
+p.s.我只有改首頁，內頁再麻煩你了，乾蝦
+
+＊ie8其他連結壞掉的問題
+layout.js裡面//index carasel list //這段code跟其他連結的js打架
+將這段code改放到首頁js的最下方就不會有影響
+可參考靜態頁面，謝謝季霖
+
+＊英文版選單縮回去問題
+更新layout.css
+
+＊跟tony討論後決定將最大寬度從1366改為1200px
+更新layout.css
+
+==0607更新=============================================
+＊cdn的問題,全部改成內連
+新增以下
+css/bootstrap.min.css
+js/jquery-1.12.4.min.js
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2
+
+==0602更新editor=============================================
+>>參考page-editor.html頁面
+>>並在每一頁的最後方加入
+<script src="js/layout.js"></script>
+(加入位置請參考檔案)
+>>目前editor控制項，我是抓網站上幾個範例來做，如有其他需要調整的地方再提出來我一邊修改
+    //表格做寬度100%;
+    //表格內圖片做寬度100%;
+    //圖片最大寬度100%;
+
+
+==0602更新=============================================
 >>首頁banner建議大小766*430px
 >>首頁banner的控制點改成程式產生(首頁搜尋："0601更新"，找到區塊並拿掉)
 
@@ -13,7 +56,7 @@
 
 
 >>希望季霖修改css的可以統一貼到pages.css後方(pages.css的權重比layout.css高)
-我有寫上標註，搜尋："季霖新增"(並且不要在html頁面上寫入style，不然會很難控制)
+我有寫上標註，搜尋："季霖新增"(並且不要在html頁面上寫入style，不然會很難維護)
 以便做檢查調整，像是有些會互相蓋到，如
 .sidenav_ul > li {
     border-bottom: #c9c9c9 1px solid;
@@ -29,6 +72,10 @@
     border-right: #c9c9c9 1px solid;
     text-indent: 0px;
 }
+往後如果有更動，麻煩再回傳給我
+
+
+
 
 ==0523更新=============================================
 >>首頁facebook區塊輪播

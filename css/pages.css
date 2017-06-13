@@ -45,6 +45,8 @@ pages style:index
 }
 .section_glory_L .carousel-inner {
     text-align: center;
+    height: 100%;
+    min-height: 430px;
 }
 
 .section_glory_L .carousel img {
@@ -53,7 +55,8 @@ pages style:index
     margin: 0 auto;
    /*  width: 100%; */
 
-    width: auto;
+    /* width: auto;*/
+    height: 100%; 
     max-height: 430px;
 }
 
@@ -92,6 +95,7 @@ pages style:index
     /* margin: 37px 0px; */
     margin: 23px 0px;
     border-bottom: 1px dashed #a2a2a2;
+    list-style-type: none;
 }
 
 .section_glory_R ul.glory li:before {
@@ -103,15 +107,22 @@ pages style:index
     top: 7px;
     left: -19px;
 }
-
+/* 01 */
 .section_glory_R ul.glory li a {
+}
+.section_glory_R ul.glory li a{
     display: block;
+    float: left;
     height: 26px;
+    line-height: 26px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 600;
+    width: 100%;
 }
+
+
 
 .section_glory_R ul.glory li a:hover {
     text-decoration: none;
@@ -154,6 +165,7 @@ pages style:index
     border-radius: 0;
     background-color: #fff;
     margin-right: 4px;
+    padding: 10px 0;
 }
 
 .section_contentTab1 .nav-tabs>li.active>a {
@@ -271,7 +283,6 @@ pages style:index
     float: left;
     border-radius: 5px 5px 0 0;
     text-align: center;
-    font-size: 20px;
     line-height: 1.8;
     font-weight: 500;
     color: #999;
@@ -281,7 +292,7 @@ pages style:index
 
     overflow: hidden;
     background: white;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 42px;
 }
 .content3_C .labnews li a{
@@ -909,6 +920,8 @@ pages style:index
     height: 52.63vw;
 }
 .section_glory_L .carousel img {
+    max-height: none;
+    width: 100%;
 }
 /*  首頁服務光箱 */
 .artmidSubNav {
@@ -1006,6 +1019,9 @@ pages style:index
     height: 38px;
     line-height: 24px;
     }
+    .pages_all .contenR {
+    padding: 30px 15px;
+}
 }
 @media screen and (max-width: 480px) {
   .dortorMore .breadcrum a{
